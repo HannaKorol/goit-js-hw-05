@@ -4,7 +4,7 @@ const getTotalBalanceByGender = (users, gender) => {
 .reduce((totalBalance, client) => totalBalance + client.balance, 0);
 };
 
-    const clients = [
+const clients = [
         {
         name: "Moore Hensley",
         gender: "male",

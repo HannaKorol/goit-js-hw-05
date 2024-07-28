@@ -30,11 +30,26 @@ friends: ["Goldie Gentry", "Briana Decker"]
 ];
 
 
-const getUsersWithFriend = (users, friendName) => 
-    users
+function getUsersWithFriend (users, friendName) {
+return users
 .filter(user => user.friends.includes(friendName))
-.map(user => user.name);
+.map(user => {
+    return {
+        name:user.name,
+        friends:user.friends
+    };
+});
+    }
 
+
+ function getUsersWithFriend (users, friendName) {
+    const result = [];
+
+    users.forEach(user
+        
+    )
+
+ }
 
 
 console.log(getUsersWithFriend(allUsers, "Briana Decker")); //[
